@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first site </title>
+    <style>
+        p{
+            background-color:red;
+        }
+        h3{
+            color:blue !important
+        }
+        p{
+            border:2px solid yellow;
+        }
+        /*id selector */
+       #redElement {
+            color:red;
+            background-color:green;
+        }
+        /*class selector*/
+        .blueElement{
+            color:pink;
+            background-color:brown;
+        }
+        /*grouping selector */
+        span,footer{
+            color:aqual;
+            background-color:purple;
+            p{
+            color:red;
+            background-color:pink;
+            font:italic;
+            font-weigth:bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:33px;
+            line: heigth 3.1em;
+        }
+        span{
+            font-style: oblique;
+        }
+        #firstpara{
+            color:red;
+            background-color:palevioletred;
+            font:icon;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:55px;
+        }
+        #secondpara{
+            color:aqua;
+            background-color:brown;
+            font:icon;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:55px;
+        }    
+        #thirdpara{
+            color:beige;
+            background-color:blueviolet;
+            font:icon;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:55px;
+        }
+        #firstpara{
+            background-color: red;
+            height:100px;
+            width: 455px;
+            border: 4px solid green;
+            /*border widht:4px;
+            border-color:green;
+            border-style: solid; */
+            border-radius: 11px;
+        }
+        #secondpara{
+            background-color: rgb(77, 55, 100);
+            height: 100px;
+            width: 455px;
+            border-top: 2px solid  green;
+            border-right: 2px solid goldenrod;
+            border-bottom: 2px solid peru;
+            border-left :2px solid fuchsia;
+            border-top-left-radius: 4px  ;  
+            border-top-right-radius: 14px  ; 
+            border-bottom-left-radius:24px ;
+            border-bottom-right-radius: 33px;  
+        }
+        #thirdpara{
+           height:600px;
+           width: 600px;
+           background-image: url(tut.jpg);
+           background-repeat: no repeat;/* repeat x and repeat y will make it repeat on x and y axis */
+           /* background position 192px and 32px */
+           background-position: center;
+           
+        }
+        *{
+            box-sizing:border-box;
+            margin:0px;
+            padding:0px;
+        } 
+        body{
+            background-color:aqua;
+        }
+        .container{
+            background-color:red;
+            border:12px solid blueviolet;     
+            margin-top:10px;
+            margin-right:10px;
+            margin-left:10px;
+            margin-bottom:10px;
+
+            padding :40px ;
+            padding-left: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            margin: 50px;
+        }
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 900px;
+            border:3px solid purple;
+            background-color: blanchedalmond;
+           margin: auto;
+
+        }
+        .item{
+            border: 3px solid violet;
+            margin:12px 3px;
+            padding:12px 3px;
+            background-color:lightblue;
+        }
+        #fruits{
+            float:left;
+            width:48%;
+
+        }
+        #computer{
+           /* float:left; */
+           float: right;
+            width:48%;
+        }
+        #stationary{
+            clear: both;
+        }
+        
+        p,h3{
+            font-size: 16px;
+            text-align: center;
+            text-align: left;
+            text-align: right;
+            text-align: justify;
+        }
+        h1{
+        margin: auto;
+        text-align: center;
+        }
+        .container{
+            border: 4px solid rgb(153, 141, 51);
+            background-color: bisque;
+            margin: auto;
+            padding: 34px;
+            width:666px;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+
+        }
+        p{
+            font-size: 25px;
+        }
+        .btn{
+            background-color: darkblue;
+            margin: 25px;
+            padding: 30px;
+            cursor: pointer;
+            font-size: 25px;
+            border-radius: 10px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+            background-color: red;
+            border: 2px solid red;
+        }
+        button:hover{
+            color:red;
+            background-color: red;
+            border: 2px solid red;
+        }
+        a:visited{
+            background-color: red;
+
+        }
+        :active{
+            color: red;
+        }
+        .navbar{
+            background-color: red;
+            border-radius: 7px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            padding: 5px;
+            list-style: none;
+            margin:  10px 40px;
+            border-radius: 5px;
+            font-weight: bold;
+           
+        }
+        .navbar li a{
+            text-decoration: none;
+            padding: 3px 3px;
+        }
+        .navbar li a:hover{
+            color:red;
+            background-color: red;
+        }
+        .search{
+            float: right;
+            color:red;
+            padding: 12px 15px;
+        }
+        .navbar input{
+            border: 2px solid red;
+            border-radius: 5px;
+            padding:3px ;
+            cursor: pointer;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            margin: auto;
+            border: 4px solid red;
+            margin: auto;
+            width: 1200px;
+            height: auto;
+        }
+        img{
+            margin: auto;
+            display: block;
+            height: auto;
+            width: auto;
+        }
+        h3{
+            text-align: center;
+            font-family: serif;
+            margin: 0px;
+        }
+        .box{
+            border: 4px solid rgb(243, 4, 4);
+            background-color: red;
+            margin: 4px 0px;
+            padding: 23px;
+            width:  33%;
+            display: inline-block;
+            
+           
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+        .container{
+            border: 2px solid red;
+            background-color:red;
+        }
+        .box{
+            border: 2px solid red;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+
+        }
+        #box3{
+            position:static;
+            right: 4px;
+        }
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid red;
+        }
+        #box1 {background-color:red;
+        position: relative;
+        top: 49px;
+        z-index: -35px;
+
+        }
+        #box2 {background-color:red; 
+            position: relative;
+            top: 14px;
+            z-index: -165px;
+        }
+        #box3 {background-color:red;}
+        #box4 {background-color: red;}
+        #box5 {background-color: crimson;}
+        
+    </style>
+    <link rel="stylesheet" href="pritam.css">
+  
+</head>
+<body>
+    <header>
+        <nav class="navbar"> 
+            <ul>
+                <li> <a  href="#">home</a></li> <br>
+                <li> <a href="#"> about</a></li> <br>
+                <li> <a href="#"> service</a></li> <br>
+                <li> <a href="#"> contect</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this web site">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <header class="top">
+        <h3>WELCOME TO PRITAM VLOG'S</h3>
+        <img src="krishna1.png" alt="pritam's photo">
+    </header>
+    <div class="container">
+        <p>this is another &nbsp;&nbsp;paragraph with two space</p> 
+        <p>paragraph is written like this &lt;p&gt; </p>
+        <p>pound is written like this &pound;</p>
+        <p>copyright is written like this &COPY; </p>
+        <p> another character is &rAarr; </p>
+        <p>another character is &frac14; </p>
+        <p> Empty character is written like this &#8203; </p>
+  
+      </div>
+      <div class="container">
+        <div class="box">
+            <h4 class="heading"> first heading</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque atque quod explicabo
+                magnam mollitia consequatur aliquam modi rem maiores provident reprehenderit odit assumenda
+                 qui, facere, repellat architecto vitae reiciendis optio aspernatur, corrupti natus quia
+                  rerum? Ratione inventore repellendus deleniti eveniet voluptas officia aperiam rem,
+                   asperiores consequuntur. Molestias aut obcaecati quos?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">second heading</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque atque quod explicabo 
+               magnam mollitia consequatur aliquam modi rem maiores provident reprehenderit odit assumenda
+                qui, facere, repellat architecto vitae reiciendis optio aspernatur, corrupti natus quia
+                 rerum? Ratione inventore repellendus deleniti eveniet voluptas officia aperiam rem,
+                  asperiores consequuntur. Molestias aut obcaecati quos?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading"> third  heading</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque atque quod explicabo magnam 
+               mollitia consequatur aliquam modi rem maiores provident reprehenderit odit assumenda qui,
+                facere, repellat architecto vitae reiciendis optio aspernatur, corrupti natus quia rerum? 
+                Ratione inventore repellendus deleniti eveniet voluptas officia aperiam rem, asperiores
+                 consequuntur. Molestias aut obcaecati quos?</p>
+        </div>
+    </div>
+      <h3>css fonts</h3>
+      <p>this is the css <span>cascading style sheet</span> fonts and this is also called cascading style 
+        sheet fonts</p>
+        <h3>css selectors</h3>
+        <p>this is simple paragraph to demonstrate css selectors</p>
+        <p id="redElement" >this is another simple paragraph to demostrate css selectors</p>
+        <p class="blueElement">this is yet another simple paragraph to demonstrate css selectors</p>
+        <span>this is the first css file and it is tutorials </span>
+        <footer>this is the footer</footer>
+        <h3>csss color</h3>
+        <h2> this is first paragraph</h2>
+        <p id="firstpara">this is my first css color</p>
+    
+        <h2> this my second paragraph</h2>
+        <p id="secondpara">this is my second css color</p>
+        
+        <h2>this is my second paragraph</h2>
+        <p id="thirdpara">this is my third css color</p>
+        <h3>this is heading</h3>
+        <p id="firstpara">this is the paragraph</p>
+    
+        <h3>this is alos a heading</h3>
+        <p id="secondpara">this is also a paragraph</p> 
+    
+        <h3>this is the third heading</h3>
+        <p id="thirdpara"> this is the third paragraph</p>
+        <div class="container">
+        <h3>this is box model</h3>
+            <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eveniet ullam
+                repellendus excepturi nam dolorem deleniti cum tempora dignissimos, laboriosam voluptatem numquam 
+                nulla voluptas enim labore totam. Ea, cumque quis.</p>
+            </div>
+        <div class="container">
+            <h3>this is box model</h3>
+                <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eveniet ullam
+                     repellendus excepturi nam dolorem deleniti cum tempora dignissimos, laboriosam voluptatem
+                      numquam nulla voluptas enim labore totam. Ea, cumque quis.</p>
+        </div>
+        <div class="container">
+            <h3>this is box model</h3>
+                <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eveniet ullam repellendus excepturi nam dolorem deleniti cum tempora dignissimos, laboriosam voluptatem numquam nulla voluptas enim labore totam. Ea, cumque quis.</p>
+        </div>
+        <div class="container">
+            <h1>welcome to my store</h1>
+                <div id="fruits" class="item">
+                    <h3>fruits</h3>
+                    <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Blanditiis accusamus eaque beatae iure aspernatur aut eligendi fuga neque ducimus 
+                         impedit illo, at animi velit. Quasi adipisci obcaecati animi vero dolor Lorem ipsum, 
+                         dolor sit amet consectetur adipisicing elit. Quos ipsa mollitia nesciunt, illum molestias
+                          veritatis repellendus, minus magni atque possimus reprehenderit a, dignissimos nulla 
+                          quod exercitationem minima suscipit veniam voluptatem.</p>
+                </div>
+                <div id="computer" class="item">
+                    <h3>computer</h3>
+                    <p id="computerspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Veritatis, quis. Adipisci, asperiores quas earum consequatur eius magnam numquam soluta
+                          eos alias amet a sunt corporis nesciunt accusantium maiores incidunt aperiam? Lorem
+                           ipsum dolor sit, amet consectetur adipisicing elit. Unde quia nesciunt libero
+                            excepturi ab hic explicabo amet delectus reprehenderit, blanditiis quas fuga
+                             deserunt nihil consequuntur iure ut at, commodi in?</p>
+                </div>
+                <div id="stationary" class="item">
+                    <h3>stationary</h3>
+                    <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Explicabo distinctio, at architecto possimus amet voluptates dolore, tempore nam dolorum, 
+                        sunt vitae molestias aliquid nihil laboriosam ab doloribus dignissimos totam quibusdam?
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et repellendus
+                          obcaecati quo ipsum quam maxime laudantium pariatur magni? Labore, vitae qui?
+                           Id dolore quae mollitia vel sit facilis magni.</p>
+                </div>
+                <div id="stationary" class="item">
+                    <h3>stationary</h3>
+                    <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Explicabo distinctio, at architecto possimus amet voluptates
+                          dolore, tempore nam dolorum, sunt vitae molestias aliquid nihil laboriosam ab 
+                          doloribus dignissimos totam quibusdam? Lorem ipsum dolor sit amet consectetur 
+                          adipisicing elit. Explicabo et repellendus obcaecati quo ipsum quam maxime laudantium
+                           pariatur magni? Labore, vitae qui? Id dolore quae mollitia vel sit facilis magni.</p>
+                </div>
+            </div>
+            <div class="container" id="cont1">
+                <h1>this is the pseudo selectors and designing</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta deserunt dolore nemo! Reiciendis
+                     quod quia modi quis nam consectetur sed ullam. In, veritatis? Illo sunt fuga officia expedita,
+                      non eius distinctio similique velit error temporibus nostrum perferendis nam tempore vero a
+                       sapiente modi est eos provident pariatur iste qui aliquid. Lorem ipsum dolor sit amet 
+                       consectetur, adipisicing elit. Voluptate asperiores quibusdam et laborum reiciendis suscipit,
+                        sit earum recusandae delectus quasi corrupti autem voluptas quaerat ad voluptates unde 
+                        minima odit doloremque dignissimos nisi debitis! Possimus eligendi sequi repellat facilis
+                         atque vel fuga iusto, ipsam aliquid consequatur labore. Numquam voluptates iure neque.</p>
+                <a href="" class="btn">read more </a>
+                <button class="btn"> contect us </button>
+              </div> 
+    <h1>first site for begineer</h1>
+    <h3>ids and classes</h3>
+    <div id="mainbox" class="redbg redborder">
+        this is mainbox
+    </div>
+    <span class="redbg"></span>
+    <span class="redBG"></span>
+    <span id="mainSpan"></span>
+    <div class=" redBg blackborder anotherclaass"></div>
+    <div class="blackbackground"></div>
+    <span class="myclass myclass2 myclass3"></span>
+    <span class="myclass myclass2 myclass3">first</span>
+    <span class="myclass myclass2 myclass3">second</span>
+    <span class="myclass myclass2 myclass3">third</span>
+    <span class="myclass myclass2 myclass3">fouth</span>
+    <table>
+        <thead>
+            <tr>
+                <th>friends name</th>
+                <th>charchter</th>
+                <th>girlfriend</th>
+            </tr>
+        <tbody>
+             <tr>
+                <td>pritam</td>
+                <td>normal</td>
+                <td>single forever</td>
+             </tr>
+             <tr>
+                <td>Ankit</td>
+                <td>normal</td>
+                <td>many girlfriends</td>
+             </tr>
+            <tr>
+                <td>purushottam</td>
+                <td>anger\normal</td>
+                <td>have wife  </td>
+            </tr>
+                
+        </tbody>
+        </thead>
+        </table>
+        physics<input tpye="characher" nam="id"><br>
+        chemistry<input tpye="characher" nam="id"><br>
+        mathematics<input tpye="characher" nam="id"><br>
+        bhojpuri<input tpye="characher" nam="id"><br>
+        hindi<input tpye="characher" nam="id"><br>
+        <textarea name="id" cols="20" rows="20">
+            write your feedback
+    
+        </textarea>
+        <label for="gender"></label>
+        <input type="radio" name="gender" id="male">
+        <input type="radio" name="gender" id="femal">
+        <input type="radio" name="gender" id="transgender">
+        <br>
+        <input type="text" name="" id=""> 
+        <div class="container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div> 
+            <div class="box" id="box3">3</div>
+            <div class="box" id="box4">4</div> 
+        
+        </div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        
+        
+</body>
+</html>
